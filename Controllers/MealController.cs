@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MowAPI.Data;
-using MowAPI.Models;
 
 namespace MowAPI.Controllers
 {
@@ -44,7 +43,6 @@ namespace MowAPI.Controllers
 
             dbMeal.Name = meal.Name;
             dbMeal.Ingredients = meal.Ingredients;
-            dbMeal.Quantity = meal.Quantity;
 
             await _context.SaveChangesAsync();
 

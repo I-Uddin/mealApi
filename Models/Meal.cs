@@ -1,5 +1,4 @@
-﻿using MowAPI.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace MowAPI
 {
@@ -8,8 +7,7 @@ namespace MowAPI
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
-        public string Ingredients { get; set; }     
-        public int Quantity { get; set; }
+        public string Ingredients { get; set; }
 
 
     }

@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MowAPI.Models;
 
 namespace MowAPI.Data
 {
@@ -10,6 +9,7 @@ namespace MowAPI.Data
 
         public DbSet<Meal> Meals => Set<Meal>();
 
+        public DbSet<User> Users => Set<User>();
 
 
     }
